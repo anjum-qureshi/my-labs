@@ -1,0 +1,20 @@
+I'm currently a Software Engineer at IKEA with about 7 years of experience.
+
+My work has primarily been in backend and platform engineering. 
+I've worked on building frameworks and internal platforms, 
+including a credit card onboarding framework that reduced launch timelines from two sprints to two days, 
+and I have also worked on API gateway and routing solutions using Kong.
+
+Over the last year I've become increasingly interested in architecture and large-scale system design. 
+While I still enjoy hands-on coding, I'm looking for a role with greater technical ownership 
+where I can contribute to architecture decisions and system evolution.
+
+
+Business Context
+Pain Points
+My Responsibility
+Solution
+Technical Decisions
+Challenges
+
+I'm early in my interview process, so I'm still calibrating against the market. My initial target was ₹42–45 LPA based on the type of role and responsibilities I'm looking for, but I'm primarily focused on finding the right opportunity and understanding the role first.

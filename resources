@@ -1,0 +1,419 @@
+📘 DSA + SYSTEM DESIGN INTERVIEW PREPARATION PLAN
+(April 15 – September 30)
+ 
+📌 DOCUMENT PURPOSE
+This document is a structured preparation plan for:
+•	Senior Backend Engineer 
+•	Platform Engineer 
+•	Lead Backend Roles 
+Focus areas:
+•	Data Structures & Algorithms (DSA) 
+•	System Design 
+•	Interview readiness 
+ 
+🎯 OVERALL GOAL
+By September 30, you should be able to:
+•	Solve medium DSA problems confidently 
+•	Design scalable distributed systems 
+•	Crack Senior Backend / Platform interviews 
+•	Convert interviews into offers 
+ 
+🧭 PREPARATION STRATEGY
+This plan is divided into 3 phases:
+ 
+🟢 PHASE 1: FOUNDATION (APRIL 15 – MAY 31)
+🎯 Objective:
+•	Build DSA fundamentals 
+•	Learn system design basics 
+•	Establish consistency 
+ 
+🧠 DSA TOPICS
+•	Arrays 
+•	Strings 
+•	Hashing 
+•	Two Pointers 
+•	Sliding Window 
+•	Stack 
+•	Queue 
+•	Binary Search 
+ 
+💻 DSA PRACTICE PROBLEMS
+•	Two Sum 
+•	Contains Duplicate 
+•	Best Time to Buy and Sell Stock 
+•	Maximum Subarray 
+•	Product of Array Except Self 
+•	Valid Anagram 
+•	Group Anagrams 
+•	Longest Substring Without Repeating Characters 
+•	Container With Most Water 
+•	Valid Parentheses 
+•	Binary Search 
+ 
+🏗 SYSTEM DESIGN BASICS
+Learn concepts:
+•	Scalability fundamentals 
+•	Load balancers 
+•	Caching (Redis basics) 
+•	SQL vs NoSQL 
+•	CAP theorem 
+•	REST API design 
+ 
+📺 YOUTUBE RESOURCES
+DSA
+•	Striver A2Z DSA Playlist 
+•	NeetCode (selected problems) 
+System Design
+•	Gaurav Sen (basics) 
+•	Hussein Nasser (DB fundamentals) 
+ 
+🎯 PHASE 1 OUTCOME
+•	Strong pattern recognition in DSA 
+•	Basic system design understanding 
+•	Ability to solve easy-medium problems 
+ 
+🟡 PHASE 2: INTERVIEW READINESS (JUNE – JULY)
+🎯 Objective:
+•	Master medium DSA problems 
+•	Build system design fluency 
+•	Start mock interviews 
+ 
+🧠 DSA TOPICS
+•	Trees 
+•	Graphs 
+•	Heap / Priority Queue 
+•	Recursion basics 
+ 
+💻 DSA PRACTICE PROBLEMS
+•	Level Order Traversal 
+•	Lowest Common Ancestor 
+•	Validate BST 
+•	Number of Islands 
+•	Course Schedule 
+•	Kth Largest Element 
+•	Merge K Sorted Lists 
+ 
+🏗 SYSTEM DESIGN CORE
+•	URL Shortener 
+•	Rate Limiter 
+•	Notification System 
+•	Logging System 
+•	API Gateway (VERY IMPORTANT) 
+ 
+📺 YOUTUBE RESOURCES
+•	Harkirat System Design Playlist 
+•	Exponent Mock Interviews 
+•	Striver Trees + Graphs 
+ 
+🎯 PHASE 2 OUTCOME
+•	Consistent medium DSA solving ability 
+•	Clear system design thinking 
+•	Ready for mock interviews 
+ 
+🔴 PHASE 3: INTERVIEW EXECUTION (AUGUST – SEPTEMBER)
+🎯 Objective:
+•	Convert interviews into offers 
+•	Strengthen weak areas 
+•	Master senior-level system design 
+ 
+🧠 DSA STRATEGY
+•	Revision of all patterns 
+•	Timed Leetcode practice 
+•	Company-specific problems 
+ 
+🏗 ADVANCED SYSTEM DESIGN
+•	API Gateway (deep dive – Kong experience advantage) 
+•	Chat System 
+•	File Storage System 
+•	Feed System (social media style) 
+ 
+📺 YOUTUBE RESOURCES
+•	Hussein Nasser (advanced backend concepts) 
+•	Exponent Mock Interviews 
+•	System design revision videos 
+ 
+🎯 PHASE 3 OUTCOME
+•	Interview-ready performance 
+•	Strong communication in system design 
+•	Offer conversion readiness 
+ 
+🧠 SYSTEM DESIGN INTERVIEW STRUCTURE
+Use this framework in ALL interviews:
+ 
+1. REQUIREMENTS
+•	Functional requirements 
+•	Non-functional requirements 
+ 
+2. HIGH LEVEL DESIGN
+•	Clients 
+•	Load balancer 
+•	Services 
+•	Database 
+•	Cache 
+ 
+3. DEEP DIVE COMPONENTS
+•	Database design 
+•	API design 
+•	Caching strategy 
+•	Scaling approach 
+ 
+4. BOTTLENECKS
+•	Database overload 
+•	Traffic spikes 
+•	Latency issues 
+ 
+5. SOLUTIONS
+•	Caching 
+•	Queues 
+•	Replication 
+•	Rate limiting 
+ 
+6. TRADE-OFFS
+•	Consistency vs availability 
+•	Cost vs performance 
+ 
+💻 MASTER DSA LIST (50 PROBLEMS)
+ 
+🟢 Arrays & Strings
+•	Two Sum 
+•	Contains Duplicate 
+•	Maximum Subarray 
+•	Best Time to Buy/Sell Stock 
+•	Product of Array Except Self 
+•	Merge Intervals 
+•	Group Anagrams 
+•	Valid Anagram 
+•	Longest Substring Without Repeating Characters 
+•	Container With Most Water 
+ 
+🟡 Sliding Window / Two Pointers
+•	Longest Substring Without Repeating Characters 
+•	Minimum Window Substring 
+•	3Sum 
+•	Valid Palindrome 
+•	Sliding Window Maximum 
+•	Permutation in String 
+ 
+🔵 Stack
+•	Valid Parentheses 
+•	Min Stack 
+•	Daily Temperatures 
+•	Evaluate Reverse Polish Notation 
+ 
+🟣 Binary Search
+•	Binary Search 
+•	Search Rotated Array 
+•	Koko Eating Bananas 
+•	Capacity to Ship Packages 
+ 
+🟠 Linked List
+•	Reverse Linked List 
+•	LRU Cache 
+•	Detect Cycle 
+•	Merge Two Sorted Lists 
+ 
+🔴 Trees
+•	Level Order Traversal 
+•	Lowest Common Ancestor 
+•	Validate BST 
+•	Diameter of Binary Tree 
+ 
+⚫ Graphs
+•	Number of Islands 
+•	Course Schedule 
+•	Clone Graph 
+•	BFS / DFS traversal 
+ 
+🧘 FINAL NOTES
+•	Consistency is more important than intensity 
+•	1 problem deeply is better than 5 shallow 
+•	Start interviews early, don’t wait for perfection 
+•	System design is your biggest advantage (use real experience) 
+ 
+🚀 END GOAL (SEPTEMBER 30)
+You will be able to:
+•	Solve medium DSA confidently 
+•	Handle system design interviews 
+•	Crack senior backend / platform roles 
+•	Secure offers from product companies 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Perfect—this is your final printable interview toolkit pack. You can copy this into Word and print it as multiple pages.
+ 
+📅 1. DAILY CHECKLIST (PRINTABLE SHEET)
+🧠 DSA + SYSTEM DESIGN DAILY TRACKER
+ 
+📆 Date: ___________
+🧠 DSA (1.5–2 hrs)
+☐ Problem attempted
+☐ Pattern identified
+☐ Solution understood
+☐ Rewritten without help
+☐ Notes written
+Problem name: ______________________
+Topic: _____________________________
+Difficulty: Easy / Medium / Hard
+Time taken: ________________________
+Mistakes / Learnings:
+ 
+ 
+ 
+🏗 SYSTEM DESIGN (1–1.5 hrs)
+☐ Watched concept video / learned topic
+☐ Designed system
+☐ Identified bottlenecks
+☐ Thought of scaling solutions
+System designed: ____________________
+Key ideas:
+ 
+ 
+ 
+📊 SELF RATING (1–10)
+DSA: ___ /10
+System Design: ___ /10
+Focus: ___ /10
+ 
+🎤 2. MOCK INTERVIEW ANSWER SCRIPTS (SENIOR LEVEL)
+ 
+🧑‍💻 “TELL ME ABOUT YOURSELF” (FINAL VERSION)
+👉 Use this exactly:
+I am a Senior Backend and Platform Engineer with 8+ years of experience building scalable backend systems, distributed services, and API infrastructure using Golang and Node.js.
+I have worked in domains like fintech, banking, and enterprise platforms where reliability and scalability are critical.
+Currently, I am working on API gateway systems using Kong, where I build and maintain configuration-driven plugins for dynamic routing and backend integration.
+My focus has been on backend architecture, distributed systems, and platform engineering, and I enjoy solving problems related to scalability, API design, and system reliability.
+ 
+❓ “WHY ARE YOU LEAVING YOUR CURRENT COMPANY?”
+👉 Safe + professional answer:
+I am looking for roles where I can work in a more structured engineering environment with clearer ownership and stronger focus on backend and platform system design.
+I want to grow further in areas like distributed systems and API infrastructure at scale, and I feel a different environment would give me more exposure and opportunity in that direction.
+ 
+🏗 SYSTEM DESIGN ANSWER TEMPLATE (CHEAT SHEET)
+ 
+STEP 1: REQUIREMENTS
+•	Functional requirements 
+•	Non-functional requirements 
+ 
+STEP 2: HIGH LEVEL DESIGN
+•	Clients 
+•	Load balancer 
+•	Application services 
+•	Database 
+•	Cache 
+ 
+STEP 3: CORE COMPONENTS
+Pick 2–3:
+•	Database design 
+•	Caching strategy 
+•	API design 
+•	Message queues 
+•	Partitioning 
+ 
+STEP 4: BOTTLENECKS
+•	DB overload 
+•	traffic spikes 
+•	latency issues 
+ 
+STEP 5: SOLUTIONS
+•	caching 
+•	replication 
+•	sharding 
+•	queue systems 
+•	rate limiting 
+ 
+STEP 6: TRADE-OFFS
+•	consistency vs availability 
+•	cost vs performance 
+•	speed vs complexity 
+ 
+🔥 3. SYSTEM DESIGN “ONE-PAGE CHEAT SHEETS”
+ 
+🧠 URL SHORTENER
+Components:
+•	API Gateway 
+•	Service layer 
+•	Database (key-value store) 
+•	Cache (Redis) 
+Flow:
+User → API → generate short URL → store → redirect
+Scaling:
+•	caching hot URLs 
+•	DB partitioning 
+•	rate limiting 
+ 
+🧠 RATE LIMITER
+Techniques:
+•	Token bucket 
+•	Leaky bucket 
+Storage:
+•	Redis (fast counters) 
+Use cases:
+•	API protection 
+•	traffic control 
+ 
+🧠 NOTIFICATION SYSTEM
+Components:
+•	Producer service 
+•	Queue (Kafka/RabbitMQ) 
+•	Worker service 
+•	Push providers (SMS/email/push) 
+Key idea:
+Asynchronous processing
+ 
+🧠 API GATEWAY (YOUR STRONGEST TOPIC 🔥)
+Responsibilities:
+•	routing requests 
+•	authentication 
+•	rate limiting 
+•	logging 
+•	plugins (VERY IMPORTANT FOR YOU) 
+Architecture:
+Client → Gateway → Backend services
+Scaling:
+•	stateless gateway nodes 
+•	horizontal scaling 
+•	caching routes 
+ 
+🧘 FINAL PRINTABLE SUMMARY
+DAILY RULE:
+✔ 1 DSA problem deep focus
+✔ 1 system design concept
+✔ 1 weekly mock
+ 
+NON-NEGOTIABLES:
+✔ consistency > intensity
+✔ write everything down
+✔ revise weekly
+ 
+YOUR ADVANTAGE:
+✔ real API gateway experience
+✔ distributed systems exposure
+✔ backend production ownership
+ 
+🚀 END GOAL (SEPT 30)
+You will be able to:
+•	Solve medium DSA confidently 
+•	Crack system design rounds 
+•	Clear senior backend/platform interviews 
+•	Secure offers from product companies 
+ 
+Top of Form
+
+
