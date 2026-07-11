@@ -1,0 +1,48 @@
+128. Longest Consecutive Sequence
+Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence.
+
+You must write an algorithm that runs in O(n) time.
+
+Input: nums = [100,4,200,1,3,2]
+Output: 4
+Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
+
+
+For each element in the array
+we find the next consecutive element 
+keep doing this until we finish whole array
+Maintain what are the elements already used.
+
+O(n3)
+
+1. Convert the array to a hash map of element existence
+2. For each element(x) in the array, find whether the next element(x+1) exists in the hash map
+3. If it exists, continue to find the next element(x+2) and so on
+4. Keep track of the length of the consecutive sequence
+5. Update the maximum length if the current sequence is longer
+6. If element does not exist(x+1), move to the next element in the array
+
+
+1. Build a hash set from the array.
+2. Initialize maxLength.
+3. For each element x:
+    - If x-1 exists, skip this element because it is not the start of a sequence.
+    - Otherwise:
+        - Initialize the current sequence length.
+        - Repeatedly check whether the next consecutive number exists. 
+        - Extend the sequence until it cannot be extended.
+        - Update maxLength if the current sequence is longer.
+
+
+
+func longestSequenceNumber(nums []int) {
+    
+}
+    
+
+[100,4,200,1,3,2] - 
+
+x= 100, 4, 200, 1
+y= 101, 5, 201, 2, 3
+maxLength = 0, 1, 2
+sequenceLength = 0, 1, 2

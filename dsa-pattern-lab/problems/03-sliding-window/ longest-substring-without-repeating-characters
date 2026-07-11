@@ -1,0 +1,155 @@
+For example we have "abba". possible substrings would be  
+--- these are the substrings of the above string "a", "ab", "abb", "abba", "b", "bb", "bba", "b", "ba", "a" 
+    total number of substrings , n + (n-1) + (n-2) + ... + 1 (closed-form sum) n(n+1)/2 --> O(n2)
+--- for each substring Maintain a hash set of seen characters while scanning the substring, 
+    so when curr element was already seen we return false
+--- as we are validating substring maintain longest length till now 
+--- I think to calculate substrings it would be O(n2) and also find uniqueness it would O(m) time for space. m is the length of the current substring being validated
+
+
+total complexity would be O(m) * O(n2)
+"In the worst case, validating a substring requires scanning all of its characters. Since a substring can be as long as n, the validation step is O(n)."
+
+Then conclude:
+
+Number of substrings: O(n²)
+Validation per substring: O(n)
+Total: O(n³)
+
+In Go, the slice expression s[i:j] includes index i but excludes index j. 
+Therefore, if I want to include the last character of the string in a substring, j must be allowed to reach len(s)
+func lengthOfLongestSubstring(s string) int {
+    longestLength := 0
+    uniqueChars := make(map[rune]struct{})
+    for i := 0; i < len(s); i++ {
+        for j := i + 1; j <= len(s); j++ {
+            substring := s[i:j]
+            if isUnique(substring) {
+                if len(substring) > longestLength {
+                    longestLength = len(substring)
+                }
+            }
+        }
+    }
+    return longestLength
+}
+
+
+func isUnique(substring string) bool {
+    charMap := make(map[rune]struct{})
+    for _, char := range substring {
+        if _, exists := charMap[char]; exists {
+            return false
+        }
+        charMap[char] = struct{}{}
+    }
+    return true
+}
+
+
+// We're recomputing the uniqueness of the common prefix of consecutive substrings.
+// Or, even more concretely:
+
+// For:
+
+// "a"
+// "ab"
+// "abb"
+// "abba"
+
+// when checking "abb":
+
+// You already know "ab" had unique characters.
+// Yet your algorithm starts from the beginning and checks 'a' and the first 'b' again.
+
+// Then, when checking "abba":
+
+// You again start from 'a'.
+// You again check the first 'b'.
+// You again check the second 'b'.
+
+// You're repeatedly scanning the same prefix.
+
+// When extending a substring by one character, I'd like to reuse the set of characters I've already seen instead of rebuilding it from scratch
+
+
+
+// Maintain a unique character set initiliaze with empty set our first element at index i, we add it to the set and continue reading the next character.
+// If the next character is not in the unique character set, we add it to the set and continue reading the next character.
+// If the next character is already in the unique character set, we have found the longest substring starting from index i.
+// We compare its length with the longest length found so far and update if necessary. 
+// Then we reset the unique character set and start from the next index i+1.
+// If the we reach end of the string without seeing a duplicate, we will return the whole string as the longest substring starting from index i.
+// the next index i+1 will be the starting point of the next substring to check. when the set is reset.
+
+state maintained:
+- unique character set
+- longest length found so far
+- current index i
+
+Start with index i = 0, longest length = 0, unique character set = empty
+Find next character at index j (starts from i)
+Check the character at index j, is it present in the unique character set?
+If not, add it to the set and continue to the next character. 
+    j advances to the next character. (increase j by 1)
+    if j reaches the end of the string, compute the length of the current substring (j-i)
+    compare current substring length with the longest length found so far (j-i > longestLength). return the higher value
+
+If it is present, we have found the longest substring for the current index i. 
+    compare j-i (current substring length) with longest length found so far.
+    If j-i > longest length, update longest length to j-i.
+    reset the unique character set and move to the advance i (i+1). j is reset to i and we continue the process.
+
+Loop continues until we have checked all possible starting indices, we will return the longest length found so far.
+
+
+
+Init unique character set = empty, longest length = 0, i = 0, j = 0.
+Loop i from 0 to len(s)-1
+    Loop j from i to len(s)-1
+    calcualte current substring length = j - i + 1
+        If s[j] is not in unique character set
+            Add s[j] to unique character set
+            Break the inner loop (we found a duplicate)
+            Reset unique character set for the next starting index i
+            Update longest length 
+            Else
+            Break the inner loop (we found a duplicate)
+        If current substring length > longest length
+
+            Else
+    Update longest length to current substring length
+    Reset unique character set for the next starting index i
+
+Return longest length found so far. 
+
+
+
+
+"abba"
+func lengthOfLongestSubstring(s string) int {
+    longestLength := 0
+    uniqueChars := make(map[rune]struct{})
+    i, j := 0, 0
+
+    for i < len(s) {
+        if _, exists := uniqueChars[rune(s[j])]; !exists {
+            uniqueChars[rune(s[j])] = struct{}{}
+            j++
+            length := j - i
+            if length > longestLength {
+                longestLength = length
+            }
+        } else {
+            // delete(uniqueChars, rune(s[i]))
+            i++
+        }
+        if j == len(s) {
+            break
+        }
+    }
+
+    return longestLength
+}
+
+

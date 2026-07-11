@@ -1,0 +1,55 @@
+prices := []int{7, 1, 5, 3, 6, 4}
+finalProfit := 0
+
+// brute force approach T: O(n2) S: O(1)
+for i := 1; i < len(prices); i++ {
+	for j := 0; j < i; j++ {
+		profit := prices[i] - prices[j]
+		if profit > finalProfit {
+			finalProfit = profit
+		}
+	}
+}
+
+// optimized approach T: O(n) S: O(1)
+minPrice := prices[0]
+finalProfit := 0
+for i := 1; i < len(prices); i++ {
+	profit := prices[i] - minPrice
+	if profit > finalProfit {
+		finalProfit = profit
+	}
+	if prices[i] < minPrice {
+		minPrice = prices[i]
+	}
+}
+
+//product of array except self brute force approach T: O(n2) S: O(n)
+func productExceptSelf(nums []int) []int {
+    products := []int{}
+    for i := 0; i < len(nums); i++ {
+        product := 1
+        for j := 0; j < len(nums); j++ {
+            if i == j {
+                continue
+            }
+            product = product * nums[j]
+        }
+        products = append(products,product)
+    }
+    return products
+}
+
+// prefix and suffix approach T: O(n) S: O(n)
+//optimised T: O(n) S: O(n) // [1,2,3,4] // [24,12,8,6]
+func productExceptSelf(nums []int) []int {
+    products := []int{1}
+    for i := 1; i < len(nums); i++ {
+        products = append(products, products[i-1]*nums[i-1])  //[1,1,2,6]
+    }
+	// right := 1
+	for i := len(nums) - 2; i >= 0; i-- { // [1,1,2,6], [1,1,8,6], [1,1,8,6] // i:1, P:1, 8
+		products[i] = products[i] * nums[i+1]
+	}
+    return products
+}
