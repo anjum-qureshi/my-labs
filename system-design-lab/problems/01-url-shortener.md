@@ -26,7 +26,6 @@ Design a url shortening service that allows users to create short urls. Redirect
     - 100M reads/ day which is approx 1157 average qps. 11570 peak qps.
     - 10M writes/day whic is 115 average qps, 1150 peak qps
 
-
 3. Data
     - short-code type string (max len 10)
     - long url varchar 50-100
@@ -64,7 +63,7 @@ Design a url shortening service that allows users to create short urls. Redirect
     - GET /{short-code}
 
 What I learnt?
-- Base64 has character =, /, + which have special meaning in urls. so use base64url or base62
+- Base64 has character =, /, ?,+ which have special meaning in urls. so use base64url or base62
 - Snowflake string generation
 - base62 encoding (using character length) starting 000000, 000001, ..., up to zzzzzzz,
 
